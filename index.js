@@ -73,8 +73,9 @@ async function postMessage() {
     body: '{"foo": "bar"}',
     headers: {
       "Content-Type": "application/json",
-      "X-TEST-SEND-DELAY-MS": 0,
-      "X-TEST-DELETE-DELAY-MS": 0,
+      "X-TEST-SEND-DELAY-MS": 500,
+      "X-TEST-SEND-PERCENT": 50,
+      "X-TEST-DELETE-DELAY-MS": 500,
       "X-TEST-DELETE-PERCENT": 50,
     }
   })
